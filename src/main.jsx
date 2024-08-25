@@ -5,10 +5,12 @@ import './index.css'
 import { ThemeProvider } from './ThemeContext.jsx'
 
 createRoot(document.getElementById('root')).render(
+   <ThemeProvider>
   <StrictMode>
-    <ThemeProvider>
+   
       <App />
-    </ThemeProvider>
+  
     
-  </StrictMode>,
+  </StrictMode>
+  </ThemeProvider>
 )
